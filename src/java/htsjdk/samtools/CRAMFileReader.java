@@ -89,12 +89,12 @@ public class CRAMFileReader extends SamReader.ReaderImplementation {
      * Open CRAM file for reading. If index file is supplied than random access
      * will be available.
      *
-     * @param cramFile        CRAM file to read
+     * @param file            CRAM file to read
      * @param indexFile       index file to be used for random access
      * @param referenceSource a {@link htsjdk.samtools.cram.ref.ReferenceSource source} of
      *                        reference sequences
      */
-    public CRAMFileReader(final File cramFile, final File indexFile,
+    public CRAMFileReader(final File file, final File indexFile,
                           final ReferenceSource referenceSource) {
         if (file == null)
             throw new IllegalArgumentException("File is required.");
